@@ -1,5 +1,4 @@
-PreserveAttributes
-==================
+= PreserveAttributes
 
 Preserve attributes allows you to specify attributes in you ActiveRecord that
 won't get set if you update them with nil. This becomes useful if you have
@@ -10,11 +9,10 @@ other fields in their account.
 
 NOTE: This method currently only applies to update_attributes, not save.
 
-Example
-=======
+== Example
 
-class User << ActiveRecord::Base
-  preserve_attributes_if_nil :password, :avatar
-end
+  class User << ActiveRecord::Base
+    preserve_attributes_if_nil :password, :avatar
+  end
 
 Copyright (c) 2009 Adam Elliot, released under the MIT license
